@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C56BDC"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="137dp"
+        android:background="#03CCF4"
+        android:text="Start"
+        android:textColor="#0F0B0B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="169dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="127dp"
+        android:text="Welcome Screen"
+        android:textColor="#0D0D0D"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="267dp"
+        android:layout_height="109dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="140dp"
+        android:text="Welcome to the Flashcard study app ,this app is here to help you to learn it is a guide to study ,you will anser 5 questions and then you will be scored on your answers.."
+        android:textColor="#1A1818"
+        android:textColorLink="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="217dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+        app:srcCompat="@drawable/hitlrt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
